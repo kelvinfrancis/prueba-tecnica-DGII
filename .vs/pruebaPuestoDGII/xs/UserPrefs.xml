@@ -1,28 +1,15 @@
 ﻿<Properties StartupConfiguration="{D8C06BD5-D9EE-4405-BBD7-7020299A3B80}|http">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.pruebaPuestoDGII PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/Contribuyentes.cs">
     <Files>
       <File FileName="Controllers/Contribuyentes.cs" Line="74" Column="15" />
-      <File FileName="Program.cs" Line="23" Column="1" />
+      <File FileName="Program.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="pruebaPuestoDGII">
-            <Node name="pruebaPuestoDGII">
-              <Node name="Controllers">
-                <Node name="Contribuyentes.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
