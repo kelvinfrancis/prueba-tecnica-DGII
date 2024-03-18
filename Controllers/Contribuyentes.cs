@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace pruebaPuestoDGII.Controllers
 {
+
 
     public class Contribuyente
     {
@@ -16,10 +18,10 @@ namespace pruebaPuestoDGII.Controllers
 
     public class ComprobantesFiscales
     {
-        public long RncCedula;
-        public required string NCF;
-        public double Monto;
-        public double Itbis18;
+        public long RncCedula { get; set; }
+        public required string NCF { get; set; }
+        public double Monto { get; set; }
+        public double Itbis18 { get; set; }
     }
 
     [ApiController]
@@ -27,6 +29,12 @@ namespace pruebaPuestoDGII.Controllers
 
     public class Contribuyentes : ControllerBase
     {
+        private readonly ILogger<Contribuyentes> _logger;
+
+        public Contribuyentes(ILogger<Contribuyentes> logger)
+        {
+            _logger = logger;
+        }
         object listaContribuyente = new List<Contribuyente>()
         {
             new Contribuyente() {RncCedula = 98754321012, Nombre = "JUAN PEREZ", Tipo = "PERSONA FISICA", Estatus = "inactivo"},
@@ -49,7 +57,7 @@ namespace pruebaPuestoDGII.Controllers
         // Metodo para Obtener Comprobantes Fiscales
 
         [HttpGet("GetListadoComprobastesFiscales/{RncOCedula}")]
-        public ActionResult<List<ComprobantesFiscales>> Get(long rncCed)
+        public ActionResult<List<ComprobantesFiscales>> Get(long RncOCedula)
         {
 
             var listaComprobastesFiscales = new List<ComprobantesFiscales>()
@@ -68,13 +76,14 @@ namespace pruebaPuestoDGII.Controllers
             var buscados = new List<ComprobantesFiscales>();
             foreach (var comprobante in listaComprobastesFiscales)
             {
-                if (comprobante.RncCedula == rncCed)
+                if (comprobante.RncCedula == RncOCedula)
                 {
+                    _logger.LogInformation("Toy llegando");
                     buscados.Add(comprobante);
                 }
             };
 
-            return buscados;
+            return Ok(buscados);
         }
     }
 }
