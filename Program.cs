@@ -1,6 +1,17 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using pruebaPuestoDGII.Data;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Agregar conexion a BBDD SQLite
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<DataContext>(
+    Options => Options.UseSqlite(connectionString)
+);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
