@@ -6,8 +6,9 @@ namespace pruebaPuestoDGII.Models
     
         public class ComprobantesFiscales
     {
-        [Key]
+        
         public long RncCedula { get; set; }
+        [Key]
         public required string NCF { get; set; }
         public double Monto { get; set; }
         public double Itbis18 { get; set; }
