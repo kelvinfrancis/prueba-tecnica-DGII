@@ -1,7 +1,8 @@
 # prueba-tecnica-DGII
 
 Nota Importante:
-Tomar en cuenta que el puerto utilizando para la conexion en la API es el siguiente: localhost:5107
+Tomar en cuenta que el puerto utilizando para la conexion en la API es el siguiente: http://localhost:5107
+Puerto de la app web (por defecto): http://localhost:3000 
 
 Mandato de la prueba:
 
