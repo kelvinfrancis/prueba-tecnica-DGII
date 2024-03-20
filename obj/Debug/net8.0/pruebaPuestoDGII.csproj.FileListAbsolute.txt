@@ -128,3 +128,6 @@
 /Users/kelvinmoquetepena/repos/prueba-tecnica-DGII/obj/Debug/net8.0/pruebaPuestoDGII.pdb
 /Users/kelvinmoquetepena/repos/prueba-tecnica-DGII/obj/Debug/net8.0/pruebaPuestoDGII.genruntimeconfig.cache
 /Users/kelvinmoquetepena/repos/prueba-tecnica-DGII/obj/Debug/net8.0/ref/pruebaPuestoDGII.dll
+/Users/kelvinmoquetepena/repos/prueba-tecnica-DGII/bin/Debug/net8.0/dgi-ui/package-lock.json
+/Users/kelvinmoquetepena/repos/prueba-tecnica-DGII/bin/Debug/net8.0/dgi-ui/package.json
+/Users/kelvinmoquetepena/repos/prueba-tecnica-DGII/bin/Debug/net8.0/dgi-ui/public/manifest.json

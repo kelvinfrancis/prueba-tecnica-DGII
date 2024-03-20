@@ -12,6 +12,13 @@ var connectionString = builder.Configuration.GetConnectionString("Sqlite");
 builder.Services.AddDbContext<DataContext>(
     Options => Options.UseSqlite(connectionString)
 );
+builder.Services.AddCors((options =>
+    {
+        options.AddPolicy("AllowSpecificOrigin",
+            builder => builder.WithOrigins("http://localhost:3000") // URL de tu frontend React
+                              .AllowAnyHeader()
+                              .AllowAnyMethod());
+    }));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -26,7 +33,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowSpecificOrigin");
 app.UseAuthorization();
 
 app.MapControllers();

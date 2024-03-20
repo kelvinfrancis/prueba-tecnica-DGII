@@ -1,5 +1,10 @@
 # prueba-tecnica-DGII
 
+Nota Importante:
+Tomar en cuenta que el puerto utilizando para la conexion en la API es el siguiente: localhost:5107
+
+Mandato de la prueba:
+
 Para este ejercicio debes crear una aplicación web y un API. Este API puede devolver los resultados en
 formato XML o en JSON. Eres libre de escoger el formato con el que te sientas más cómodo (sólo es
 necesario que se implemente uno de los formatos).
