@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pruebaPuestoDGII")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ff4d622bc52a7e7827a6c2c99ff920c55cf3833")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63ae09144743ee9b574b1db64a94ec6086db25be")]
 [assembly: System.Reflection.AssemblyProductAttribute("pruebaPuestoDGII")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pruebaPuestoDGII")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
